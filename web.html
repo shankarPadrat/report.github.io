@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Student Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="web.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  
+
+
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" >
+  <h2>Perfect Skills <img src="images/ps.png" alt="logo" style="width:140px;"></h2>
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="#"><button class="btn2">Print</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><button class="btn2">Dashboard</button></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><button class="btn2">Logout</button></a>
+    </li>
+	<li class="nav-item">
+      <a class="nav-link" ><button onclick="myFunction()" class="btn1">Dark Mode</button></a>
+    </li>
+
+    
+  </ul>
+</nav>
+
+</section>
+<br>
+<br>
+<section>
+<div class="card" >
+ <div class="box">
+  <br>
+  <br>
+  <img src="images/av.png" alt="Avatar" style="width:18%" style="height:50%" >
+ 		<br>
+        <div class="text" >
+		 <div class="card-deck">
+           <div class="card bg-primary">
+               <div class="card-body text-center">
+                  <p class="card-text"><h1>Patric D</h1></p>
+                  <p class="card-text" style="color:red"><h3><strong>Id:</strong>S554-560-755</h3></p>
+                  <p class="card-text"><h4>pat@gmail.com</h4></p>
+                  <p class="card-text"><h6>Appeared On:07/28/2020</h6></p>
+				  <p class="card-text" style="color:red;"><h5><strong>Proficiecy:</strong>Intermediate</h5></p>
+
+				  
+                </div>
+            </div>
+	        <div class="card-deck">
+            <div class="card bg-success">
+			<div class="card-body text-center">
+            <p class="card-text"><h4>Overall Score</h4></p>
+			<div class="col-md-3 col-sm-6">
+		     <div><p></p></div>
+		     <br>
+                <div class="progresscircle pink">
+				
+                 <span class="progresscircle-left">
+                    <span class="progresscircle-bar"></span>
+                 </span>
+                 <span class="progresscircle-right">
+                    <span class="progresscircle-bar"></span>
+                 </span>
+                 <div class="progresscircle-value">50%</div>
+                 </div>
+            </div>
+
+			</div>
+			</div>
+            </div>
+     <br>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+</section>
+
+
+
+
+
+
+
+<br>
+<br>
+<div class="container-fluid">
+</div>
+<div class="container">
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th>Sr.no</th>
+        <th>Secion</th>
+        <th>Total Questions</th>
+		<th>Correct</th>
+		<th>Violation count</th>
+		<th>Detailed report</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>spellings</td>
+        <td>5</td>
+		<td>2</td>
+		<td>0</td>
+		<td><button type="button" class="btn btn-success">Detailed Report</button></td>
+
+
+
+      </tr>
+      <tr>
+	    <td>2</td>
+        <td>sentence formation and completion</td>
+        <td>5</td>
+		<td>1</td>
+		<td>0</td>
+		<td><button type="button" class="btn btn-success">Detailed Report</button></td>
+        
+      </tr>
+      <tr>
+	    <td>3</td>
+        <td>Fundamentals of grammer</td>
+        <td>5</td>
+		<td>4</td>
+		<td>2</td>
+		<td><button type="button" class="btn btn-success">Detailed Report</button></td>
+        
+      </tr>
+	  <tr>
+	    <td>4</td>
+        <td>Ordering of words</td>
+        <td>5</td>
+		<td>1</td>
+		<td>0</td>
+		<td><button type="button" class="btn btn-success">Detailed Report</button></td>
+        
+      </tr>
+	  <td><button type="button" class="btn btn-primary">Learning Status</button></td>
+
+    </tbody>
+  </table>
+</div>
+<br>
+
+
+
+<section>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+</script>
+
+</section>
+
+
+
+
+<section>
+<div class="container">
+<div class="card bg-dark text-info">
+   <div class="card-body" style="text-align:center"><b><h1>Score</h1></b></div>
+</div>
+
+<br>
+<br>
+    <div class="row">
+	<section>
+        <div class="col-md-3 col-sm-6">
+		<div><div><h3 style="text-align:center">1.Spellings</h3></div></div>	
+		<br>
+		<br>
+            <div class="progresscircle yellow">
+                <span class="progresscircle-left">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <span class="progresscircle-right">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <div class="progresscircle-value">60%</div>
+            </div>
+        </div>
+	</section>
+		
+        <div class="col-md-3 col-sm-6">
+		<div><h4 style="text-align:center">2.sentence formation and completion</h4></div>
+		<br>
+            <div class="progresscircle pink">
+                <span class="progresscircle-left">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <span class="progresscircle-right">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <div class="progresscircle-value">50%</div>
+            </div>
+        </div>
+		<div class="col-md-3 col-sm-6">
+		<div><h4 style="text-align:center">3.Fundamentals of grammer</h4></div>
+		<br>
+            <div class="progresscircle green">
+                <span class="progresscircle-left">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <span class="progresscircle-right">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <div class="progresscircle-value">80%</div>
+            </div>
+        </div>
+		<div class="col-md-3 col-sm-6">
+		<div><h3 style="text-align:center">4.Ordering of words</h3></div>
+		<br>
+		<br>
+            <div class="progresscircle pink">
+                <span class="progresscircle-left">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <span class="progresscircle-right">
+                    <span class="progresscircle-bar"></span>
+                </span>
+                <div class="progresscircle-value">50%</div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+<section>
+
+<div class="container">
+   <div class="card bg-dark text-success">
+      <div class="card-body" style="text-align:center"><b><h1>Status</h1></b></div>
+   </div>
+  <br>
+  <h4>1.spellings</h4>
+  <div class="progress">
+    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width:60%">Intermediate</div>
+  </div>
+  <br>
+   <h4>2.sentence formation and completion</h4>
+  <div class="progress">
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:50%">Beginner</div>
+  </div>
+  <br>
+   <h4>3.Fundamentals of grammer</h4>
+  <div class="progress">
+    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:80%">Beginner</div>
+  </div>
+  <br>
+   <h4>4.Ordering of words</h4>
+  <div class="progress">
+    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width:50%">Beginner</div>
+  </div>
+  
+</div>
+</section>
+
+<br>
+
+<section>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+</section>  
+<br> 
+<br>
+
+</body>
+</html>
